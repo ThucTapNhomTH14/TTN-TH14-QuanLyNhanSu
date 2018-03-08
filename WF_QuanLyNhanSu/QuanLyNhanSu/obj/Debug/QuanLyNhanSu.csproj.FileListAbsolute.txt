@@ -7,3 +7,12 @@ C:\Users\Trung\Desktop\ThucTapNhom\QuanLyNhanSu\WF_QuanLyNhanSu\WindowsFormsAppl
 C:\Users\Trung\Desktop\ThucTapNhom\QuanLyNhanSu\WF_QuanLyNhanSu\WindowsFormsApplication1\obj\Debug\QuanLyNhanSu.csproj.GenerateResource.Cache
 C:\Users\Trung\Desktop\ThucTapNhom\QuanLyNhanSu\WF_QuanLyNhanSu\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\Trung\Desktop\ThucTapNhom\QuanLyNhanSu\WF_QuanLyNhanSu\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Trung\Desktop\ThucTapNhom\QuanLyNhanSu\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Trung\Desktop\ThucTapNhom\QuanLyNhanSu\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Trung\Desktop\ThucTapNhom\QuanLyNhanSu\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Trung\Desktop\ThucTapNhom\QuanLyNhanSu\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Trung\Desktop\ThucTapNhom\QuanLyNhanSu\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Trung\Desktop\ThucTapNhom\QuanLyNhanSu\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csprojResolveAssemblyReference.cache
+C:\Users\Trung\Desktop\ThucTapNhom\QuanLyNhanSu\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.main_form.resources
+C:\Users\Trung\Desktop\ThucTapNhom\QuanLyNhanSu\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Trung\Desktop\ThucTapNhom\QuanLyNhanSu\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.GenerateResource.Cache
