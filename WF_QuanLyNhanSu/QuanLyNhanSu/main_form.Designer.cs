@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_nhansu = new System.Windows.Forms.DataGridView();
             this.manv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tennv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cmnd = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,22 +43,25 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.lastupdate_status = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnCapnhat = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.toolStripStatusUpdateLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_nhansu)).BeginInit();
             this.menuBar.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
+            this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgv_nhansu
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgv_nhansu.AllowUserToAddRows = false;
+            this.dgv_nhansu.AllowUserToResizeRows = false;
+            this.dgv_nhansu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_nhansu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_nhansu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_nhansu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.manv,
             this.tennv,
             this.cmnd,
@@ -67,57 +70,66 @@
             this.ngaysinh,
             this.maphong,
             this.matdhv});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 105);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(916, 322);
-            this.dataGridView1.TabIndex = 0;
+            this.dgv_nhansu.Location = new System.Drawing.Point(12, 105);
+            this.dgv_nhansu.Name = "dgv_nhansu";
+            this.dgv_nhansu.ReadOnly = true;
+            this.dgv_nhansu.RowHeadersVisible = false;
+            this.dgv_nhansu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_nhansu.Size = new System.Drawing.Size(916, 322);
+            this.dgv_nhansu.TabIndex = 0;
             // 
             // manv
             // 
+            this.manv.DataPropertyName = "manv";
             this.manv.HeaderText = "Mã nhân viên";
             this.manv.Name = "manv";
             this.manv.ReadOnly = true;
             // 
             // tennv
             // 
+            this.tennv.DataPropertyName = "tennv";
             this.tennv.HeaderText = "Tên nhân viên";
             this.tennv.Name = "tennv";
             this.tennv.ReadOnly = true;
             // 
             // cmnd
             // 
+            this.cmnd.DataPropertyName = "cmnd";
             this.cmnd.HeaderText = "CMND";
             this.cmnd.Name = "cmnd";
             this.cmnd.ReadOnly = true;
             // 
             // sdt
             // 
+            this.sdt.DataPropertyName = "sdt";
             this.sdt.HeaderText = "Số điện thoại";
             this.sdt.Name = "sdt";
             this.sdt.ReadOnly = true;
             // 
             // diachi
             // 
+            this.diachi.DataPropertyName = "diachi";
             this.diachi.HeaderText = "Địa chỉ";
             this.diachi.Name = "diachi";
             this.diachi.ReadOnly = true;
             // 
             // ngaysinh
             // 
+            this.ngaysinh.DataPropertyName = "ngaysinh";
             this.ngaysinh.HeaderText = "Ngày sinh";
             this.ngaysinh.Name = "ngaysinh";
             this.ngaysinh.ReadOnly = true;
             // 
             // maphong
             // 
+            this.maphong.DataPropertyName = "tenphong";
             this.maphong.HeaderText = "Phòng";
             this.maphong.Name = "maphong";
             this.maphong.ReadOnly = true;
             // 
             // matdhv
             // 
+            this.matdhv.DataPropertyName = "tentdhv";
             this.matdhv.HeaderText = "Trình độ học vấn";
             this.matdhv.Name = "matdhv";
             this.matdhv.ReadOnly = true;
@@ -175,15 +187,15 @@
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
             // 
-            // statusStrip1
+            // statusStrip
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lastupdate_status});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 417);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(940, 22);
-            this.statusStrip1.TabIndex = 6;
-            this.statusStrip1.Text = "statusStrip1";
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lastupdate_status,
+            this.toolStripStatusUpdateLabel});
+            this.statusStrip.Location = new System.Drawing.Point(0, 417);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(940, 22);
+            this.statusStrip.TabIndex = 6;
             // 
             // lastupdate_status
             // 
@@ -198,6 +210,14 @@
             this.btnCapnhat.TabIndex = 7;
             this.btnCapnhat.Text = "Cập nhật";
             this.btnCapnhat.UseVisualStyleBackColor = true;
+            this.btnCapnhat.Click += new System.EventHandler(this.btnCapnhat_Click);
+            // 
+            // toolStripStatusUpdateLabel
+            // 
+            this.toolStripStatusUpdateLabel.Margin = new System.Windows.Forms.Padding(10, 3, 0, 2);
+            this.toolStripStatusUpdateLabel.Name = "toolStripStatusUpdateLabel";
+            this.toolStripStatusUpdateLabel.Size = new System.Drawing.Size(139, 17);
+            this.toolStripStatusUpdateLabel.Text = "Dòng trạng thái cập nhật";
             // 
             // main_form
             // 
@@ -205,19 +225,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(940, 439);
             this.Controls.Add(this.btnCapnhat);
-            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThem);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_nhansu);
             this.Controls.Add(this.menuBar);
             this.Name = "main_form";
             this.Text = "Phần mềm quản lý nhân sự";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_nhansu)).EndInit();
             this.menuBar.ResumeLayout(false);
             this.menuBar.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,7 +245,16 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_nhansu;
+        private System.Windows.Forms.MenuStrip menuBar;
+        private System.Windows.Forms.ToolStripMenuItem help_menu;
+        private System.Windows.Forms.ToolStripMenuItem hướngDẫnSửDụngToolStripMenuItem;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.StatusStrip statusStrip;
+        private System.Windows.Forms.ToolStripStatusLabel lastupdate_status;
+        private System.Windows.Forms.Button btnCapnhat;
         private System.Windows.Forms.DataGridViewTextBoxColumn manv;
         private System.Windows.Forms.DataGridViewTextBoxColumn tennv;
         private System.Windows.Forms.DataGridViewTextBoxColumn cmnd;
@@ -234,15 +263,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaysinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn maphong;
         private System.Windows.Forms.DataGridViewTextBoxColumn matdhv;
-        private System.Windows.Forms.MenuStrip menuBar;
-        private System.Windows.Forms.ToolStripMenuItem help_menu;
-        private System.Windows.Forms.ToolStripMenuItem hướngDẫnSửDụngToolStripMenuItem;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel lastupdate_status;
-        private System.Windows.Forms.Button btnCapnhat;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusUpdateLabel;
     }
 }
 
