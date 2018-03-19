@@ -25,3 +25,4 @@ C:\Users\Trung\Desktop\ThucTapNhom\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyN
 C:\Users\Trung\Desktop\ThucTapNhom\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.main_form.resources
 C:\Users\Trung\Desktop\ThucTapNhom\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\Trung\Desktop\ThucTapNhom\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.GenerateResource.Cache
+C:\Users\Trung\Desktop\ThucTapNhom\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.update_form.resources
