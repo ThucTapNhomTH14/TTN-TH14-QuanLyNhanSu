@@ -6,32 +6,72 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Web;
+using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-     public class db_connection
+    public class db_connection
     {
         //đổ data của nhân sự về DataGridView
-        public static DataSet GetThongtincanhan()
+        //đã sửa lại theo ông Tiến Chung về các hàm tương tác với DB
+
+        //đú theo ông Chung :)
+        private static db_connection instance;
+
+        public static db_connection Instance
         {
-            DataSet data = new DataSet();
-            string query = "exec getThongtincanhan";
-            using (SqlConnection connection = new SqlConnection(connection_string.ConnectionString)) {
-                connection.Open();
+            get { if (instance == null) instance = new db_connection(); return db_connection.instance; }
+            private set { db_connection.instance = value; }
+        }
 
-                SqlDataAdapter adapter = new SqlDataAdapter(query,connection);
+        private db_connection() { }
+        //
 
-                adapter.Fill(data);
+        private string ConnectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
+        public DataTable ExecuteQuery(string query,object[] parameter =null)
+        {
+            try
+            {
+                DataTable data = new DataTable();
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
+                {
+                    connection.Open();
 
-                connection.Close();
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    if (parameter != null)
+                    {
+                        string[] listPara = query.Split(' ');
+                        int i = 0;
+                        foreach (string item in listPara)
+                        {
+                            if (item.Contains('@'))
+                            {
+                                cmd.Parameters.AddWithValue(item, parameter[i]);
+                                i++;
+                            }
+                        }
+                    }
+
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+
+                    adapter.Fill(data);
+
+                    connection.Close();
+                }
+                return data;
             }
-            return data;
+            catch(Exception e)
+            {
+                MessageBox.Show("Lỗi kết nối!");
+                return null;
+            }
         }
 
         //update thong tin nhan su
-        public static void updateThongtincanhan(string manv,string tennv, string cmnd, string sdt, string diachi, string ngaysinh, string maphong, int tdhv)
+        /*
+        public void updateThongtincanhan(string manv,string tennv, string cmnd, string sdt, string diachi, string ngaysinh, string maphong, int tdhv)
         {
-            using (SqlConnection connection = new SqlConnection(connection_string.ConnectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 SqlCommand query = new SqlCommand("exec updateThongtincanhan @manv, @tennv, @cmnd, @sdt, @diachi, @ngaysinh, @maphong, @tdhv");
                 query.Parameters.Add("@manv", SqlDbType.VarChar, 10);
@@ -47,6 +87,6 @@ namespace WindowsFormsApplication1
                 query.ExecuteNonQuery();
                 connection.Close();
             }         
-        }
+        }*/
     }
 }

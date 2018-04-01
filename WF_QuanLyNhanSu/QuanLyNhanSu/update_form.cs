@@ -16,5 +16,16 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            string query = "exec updateThongtincanhan ";
+            db_connection.Instance.ExecuteQuery(query);
+        }
     }
 }

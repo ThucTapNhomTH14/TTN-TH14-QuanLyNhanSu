@@ -42,11 +42,11 @@
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtCMND = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.txtDay = new System.Windows.Forms.TextBox();
-            this.txtYear = new System.Windows.Forms.TextBox();
             this.lb_id_string = new System.Windows.Forms.Label();
-            this.cbMonth = new System.Windows.Forms.ComboBox();
             this.cbDiploma = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lb_name
@@ -134,66 +134,44 @@
             this.txtDepartment.Location = new System.Drawing.Point(111, 342);
             this.txtDepartment.Name = "txtDepartment";
             this.txtDepartment.Size = new System.Drawing.Size(250, 20);
-            this.txtDepartment.TabIndex = 10;
+            this.txtDepartment.TabIndex = 18;
             // 
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(111, 316);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(250, 20);
-            this.txtAddress.TabIndex = 11;
+            this.txtAddress.TabIndex = 17;
             // 
             // txtSDT
             // 
             this.txtSDT.Location = new System.Drawing.Point(111, 288);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(250, 20);
-            this.txtSDT.TabIndex = 12;
+            this.txtSDT.TabIndex = 16;
             // 
             // txtCMND
             // 
             this.txtCMND.Location = new System.Drawing.Point(111, 262);
             this.txtCMND.Name = "txtCMND";
             this.txtCMND.Size = new System.Drawing.Size(250, 20);
-            this.txtCMND.TabIndex = 13;
+            this.txtCMND.TabIndex = 15;
             // 
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(111, 210);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(250, 20);
-            this.txtName.TabIndex = 15;
-            // 
-            // txtDay
-            // 
-            this.txtDay.Location = new System.Drawing.Point(111, 235);
-            this.txtDay.Name = "txtDay";
-            this.txtDay.Size = new System.Drawing.Size(86, 20);
-            this.txtDay.TabIndex = 17;
-            // 
-            // txtYear
-            // 
-            this.txtYear.Location = new System.Drawing.Point(281, 236);
-            this.txtYear.Name = "txtYear";
-            this.txtYear.Size = new System.Drawing.Size(80, 20);
-            this.txtYear.TabIndex = 18;
+            this.txtName.TabIndex = 11;
             // 
             // lb_id_string
             // 
-            this.lb_id_string.AutoSize = true;
             this.lb_id_string.Location = new System.Drawing.Point(268, 187);
             this.lb_id_string.Name = "lb_id_string";
             this.lb_id_string.Size = new System.Drawing.Size(93, 13);
             this.lb_id_string.TabIndex = 19;
             this.lb_id_string.Text = "id_is_placed_here";
-            // 
-            // cbMonth
-            // 
-            this.cbMonth.FormattingEnabled = true;
-            this.cbMonth.Location = new System.Drawing.Point(203, 235);
-            this.cbMonth.Name = "cbMonth";
-            this.cbMonth.Size = new System.Drawing.Size(72, 21);
-            this.cbMonth.TabIndex = 20;
+            this.lb_id_string.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // cbDiploma
             // 
@@ -201,18 +179,48 @@
             this.cbDiploma.Location = new System.Drawing.Point(111, 368);
             this.cbDiploma.Name = "cbDiploma";
             this.cbDiploma.Size = new System.Drawing.Size(250, 21);
-            this.cbDiploma.TabIndex = 21;
+            this.cbDiploma.TabIndex = 19;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "                  dd / MM / yyyy";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(111, 236);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(250, 20);
+            this.dateTimePicker1.TabIndex = 25;
+            this.dateTimePicker1.Value = new System.DateTime(2018, 3, 28, 20, 54, 12, 0);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(286, 398);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.TabIndex = 26;
+            this.btnCancel.Text = "Hủy";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(205, 398);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 27;
+            this.btnSave.Text = "Lưu";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // update_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(373, 408);
+            this.ClientSize = new System.Drawing.Size(373, 433);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.cbDiploma);
-            this.Controls.Add(this.cbMonth);
             this.Controls.Add(this.lb_id_string);
-            this.Controls.Add(this.txtYear);
-            this.Controls.Add(this.txtDay);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtCMND);
             this.Controls.Add(this.txtSDT);
@@ -236,24 +244,24 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lb_name;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lb_id;
-        private System.Windows.Forms.Label lb_cmnd;
-        private System.Windows.Forms.Label lb_phone;
-        private System.Windows.Forms.Label lb_birth;
-        private System.Windows.Forms.Label lb_address;
-        private System.Windows.Forms.Label lb_department;
-        private System.Windows.Forms.Label lb_diploma;
-        private System.Windows.Forms.TextBox txtDepartment;
-        private System.Windows.Forms.TextBox txtAddress;
-        private System.Windows.Forms.TextBox txtSDT;
-        private System.Windows.Forms.TextBox txtCMND;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox txtDay;
-        private System.Windows.Forms.TextBox txtYear;
-        private System.Windows.Forms.Label lb_id_string;
-        private System.Windows.Forms.ComboBox cbMonth;
-        private System.Windows.Forms.ComboBox cbDiploma;
+        public System.Windows.Forms.Label lb_name;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label lb_id;
+        public System.Windows.Forms.Label lb_cmnd;
+        public System.Windows.Forms.Label lb_phone;
+        public System.Windows.Forms.Label lb_birth;
+        public System.Windows.Forms.Label lb_address;
+        public System.Windows.Forms.Label lb_department;
+        public System.Windows.Forms.Label lb_diploma;
+        public System.Windows.Forms.TextBox txtDepartment;
+        public System.Windows.Forms.TextBox txtAddress;
+        public System.Windows.Forms.TextBox txtSDT;
+        public System.Windows.Forms.TextBox txtCMND;
+        public System.Windows.Forms.TextBox txtName;
+        public System.Windows.Forms.Label lb_id_string;
+        public System.Windows.Forms.ComboBox cbDiploma;
+        public System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnSave;
     }
 }

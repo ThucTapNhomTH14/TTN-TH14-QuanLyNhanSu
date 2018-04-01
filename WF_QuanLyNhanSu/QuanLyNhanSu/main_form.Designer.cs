@@ -45,8 +45,8 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.lastupdate_status = new System.Windows.Forms.ToolStripStatusLabel();
-            this.btnCapnhat = new System.Windows.Forms.Button();
             this.toolStripStatusUpdateLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.btnCapnhat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_nhansu)).BeginInit();
             this.menuBar.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -186,6 +186,7 @@
             this.btnSua.TabIndex = 5;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // statusStrip
             // 
@@ -202,6 +203,13 @@
             this.lastupdate_status.Name = "lastupdate_status";
             this.lastupdate_status.Size = new System.Drawing.Size(0, 17);
             // 
+            // toolStripStatusUpdateLabel
+            // 
+            this.toolStripStatusUpdateLabel.Margin = new System.Windows.Forms.Padding(10, 3, 0, 2);
+            this.toolStripStatusUpdateLabel.Name = "toolStripStatusUpdateLabel";
+            this.toolStripStatusUpdateLabel.Size = new System.Drawing.Size(139, 17);
+            this.toolStripStatusUpdateLabel.Text = "Dòng trạng thái cập nhật";
+            // 
             // btnCapnhat
             // 
             this.btnCapnhat.Location = new System.Drawing.Point(382, 54);
@@ -211,13 +219,6 @@
             this.btnCapnhat.Text = "Cập nhật";
             this.btnCapnhat.UseVisualStyleBackColor = true;
             this.btnCapnhat.Click += new System.EventHandler(this.btnCapnhat_Click);
-            // 
-            // toolStripStatusUpdateLabel
-            // 
-            this.toolStripStatusUpdateLabel.Margin = new System.Windows.Forms.Padding(10, 3, 0, 2);
-            this.toolStripStatusUpdateLabel.Name = "toolStripStatusUpdateLabel";
-            this.toolStripStatusUpdateLabel.Size = new System.Drawing.Size(139, 17);
-            this.toolStripStatusUpdateLabel.Text = "Dòng trạng thái cập nhật";
             // 
             // main_form
             // 
