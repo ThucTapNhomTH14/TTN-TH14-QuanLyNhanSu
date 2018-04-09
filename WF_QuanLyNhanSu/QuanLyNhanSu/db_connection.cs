@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Web;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace WindowsFormsApplication1
 {
@@ -64,6 +65,28 @@ namespace WindowsFormsApplication1
             {
                 MessageBox.Show("Lỗi kết nối!");
                 return null;
+            }
+        }
+
+        public void ExecuteNonQuery(string query)
+        {
+            try
+            {
+                using(SqlConnection connection = new SqlConnection(ConnectionString))
+                {
+                    connection.Open();
+
+                    SqlCommand cmd = new SqlCommand(query, connection);
+
+                    cmd.ExecuteNonQuery();
+
+                    connection.Close();
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi kết nối!");
+                Debug.WriteLine(e.ToString());
             }
         }
 

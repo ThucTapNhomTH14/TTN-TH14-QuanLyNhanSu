@@ -67,5 +67,14 @@ namespace WindowsFormsApplication1
             update.txtDepartment.Text = selected_row.Cells[6].Value.ToString();
             update.cbDiploma.Text = selected_row.Cells[7].Value.ToString();
         }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            int row_index = dgv_nhansu.SelectedCells[0].RowIndex;
+            string nhanvien_id = dgv_nhansu.Rows[row_index].Cells[0].Value.ToString();
+            string query = "exec deleteNhanSu"+" '"+nhanvien_id+"'";
+            db_connection.Instance.ExecuteNonQuery(query);
+            btnCapnhat_Click(this, null);
+        }
     }
 }
