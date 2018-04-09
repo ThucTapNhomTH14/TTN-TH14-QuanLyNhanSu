@@ -37,7 +37,6 @@
             this.lb_address = new System.Windows.Forms.Label();
             this.lb_department = new System.Windows.Forms.Label();
             this.lb_diploma = new System.Windows.Forms.Label();
-            this.txtDepartment = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtCMND = new System.Windows.Forms.TextBox();
@@ -47,6 +46,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.cb_department = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lb_name
@@ -129,13 +129,6 @@
             this.lb_diploma.TabIndex = 8;
             this.lb_diploma.Text = "Trình độ học vấn:";
             // 
-            // txtDepartment
-            // 
-            this.txtDepartment.Location = new System.Drawing.Point(111, 342);
-            this.txtDepartment.Name = "txtDepartment";
-            this.txtDepartment.Size = new System.Drawing.Size(250, 20);
-            this.txtDepartment.TabIndex = 18;
-            // 
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(111, 316);
@@ -189,7 +182,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(250, 20);
             this.dateTimePicker1.TabIndex = 25;
-            this.dateTimePicker1.Value = new System.DateTime(2018, 3, 28, 20, 54, 12, 0);
+            this.dateTimePicker1.Value = new System.DateTime(2018, 4, 9, 0, 0, 0, 0);
             // 
             // btnCancel
             // 
@@ -211,11 +204,20 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // cb_department
+            // 
+            this.cb_department.FormattingEnabled = true;
+            this.cb_department.Location = new System.Drawing.Point(111, 342);
+            this.cb_department.Name = "cb_department";
+            this.cb_department.Size = new System.Drawing.Size(250, 21);
+            this.cb_department.TabIndex = 28;
+            // 
             // update_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(373, 433);
+            this.Controls.Add(this.cb_department);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.dateTimePicker1);
@@ -225,7 +227,6 @@
             this.Controls.Add(this.txtCMND);
             this.Controls.Add(this.txtSDT);
             this.Controls.Add(this.txtAddress);
-            this.Controls.Add(this.txtDepartment);
             this.Controls.Add(this.lb_diploma);
             this.Controls.Add(this.lb_department);
             this.Controls.Add(this.lb_address);
@@ -253,7 +254,6 @@
         public System.Windows.Forms.Label lb_address;
         public System.Windows.Forms.Label lb_department;
         public System.Windows.Forms.Label lb_diploma;
-        public System.Windows.Forms.TextBox txtDepartment;
         public System.Windows.Forms.TextBox txtAddress;
         public System.Windows.Forms.TextBox txtSDT;
         public System.Windows.Forms.TextBox txtCMND;
@@ -263,5 +263,6 @@
         public System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
+        public System.Windows.Forms.ComboBox cb_department;
     }
 }
