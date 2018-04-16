@@ -36,7 +36,7 @@ namespace WindowsFormsApplication1
                 cmd.Parameters.Add("@cmnd", SqlDbType.VarChar, 10).Value = txtCMND.Text;
                 cmd.Parameters.Add("@sdt", SqlDbType.VarChar, 11).Value = txtSDT.Text;
                 cmd.Parameters.Add("@diachi", SqlDbType.NVarChar, 100).Value = txtAddress.Text;
-                cmd.Parameters.Add("@ngaysinh", SqlDbType.Date).Value = "1997-04-05";
+                cmd.Parameters.Add("@ngaysinh", SqlDbType.Date).Value = dateTimePicker1.Value.Date;
                 cmd.Parameters.Add("@tenphong", SqlDbType.NVarChar, 50).Value = cb_department.Text;
                 cmd.Parameters.Add("@tentdhv", SqlDbType.NVarChar,10).Value = cbDiploma.Text;
 
