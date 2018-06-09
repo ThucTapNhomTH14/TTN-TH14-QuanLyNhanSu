@@ -55,14 +55,6 @@
             this.lb_name.TabIndex = 0;
             this.lb_name.Text = "Họ và tên:";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 248);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 1;
-            // 
             // lb_cmnd
             // 
             this.lb_cmnd.AutoSize = true;

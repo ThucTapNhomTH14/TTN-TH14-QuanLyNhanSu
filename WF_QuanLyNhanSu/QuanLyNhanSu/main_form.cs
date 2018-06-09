@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,8 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
             btnCapnhat_Click(this,EventArgs.Empty);
+            InitDiploma(cbDiploma);
+            InitDepartment(cb_department);
         }
 
         private void btnCapnhat_Click(object sender, EventArgs e)
@@ -105,9 +108,47 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void dgv_nhansu_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+            BindingSource bs = new BindingSource();
+            bs.DataSource = dgv_nhansu.DataSource;
 
+            string filter = "";
+
+
+            // Check if text fields are not null before adding to filter. 
+            if (!string.IsNullOrEmpty(txtName.Text))
+            {
+                filter += "tennv" + " LIKE '%" + txtName.Text + "%' ";
+            }
+            if (!string.IsNullOrEmpty(txtCMND.Text))
+            {
+                if (filter.Length > 0) filter += "AND ";
+                filter += "cmnd" + " LIKE '%" + txtCMND.Text + "%' ";
+            }
+            if (!string.IsNullOrEmpty(txtSDT.Text))
+            {
+                if (filter.Length > 0) filter += "AND ";
+                filter += "sdt" + " LIKE '%" + txtSDT.Text + "%' ";
+            }
+            if (!string.IsNullOrEmpty(txtAddress.Text))
+            {
+                if (filter.Length > 0) filter += "AND ";
+                filter += "diachi" + " LIKE '%" + txtAddress.Text + "%' ";
+            }
+            if (!string.IsNullOrEmpty(cb_department.Text))
+            {
+                if (filter.Length > 0) filter += "AND ";
+                filter += "tenphong" + " LIKE '%" + cb_department.Text + "%' ";
+            }
+            if (!string.IsNullOrEmpty(cbDiploma.Text))
+            {
+                if (filter.Length > 0) filter += "AND ";
+                filter += "tentdhv" + " LIKE '%" + cbDiploma.Text + "%' ";
+            }
+            
+            bs.Filter = filter;
+            dgv_nhansu.DataSource = bs;
         }
     }
 }
