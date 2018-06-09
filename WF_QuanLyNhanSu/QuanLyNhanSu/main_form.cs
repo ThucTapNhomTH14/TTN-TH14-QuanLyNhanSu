@@ -91,5 +91,23 @@ namespace WindowsFormsApplication1
             db_connection.Instance.ExecuteNonQuery(query);
             btnCapnhat_Click(this, null);
         }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            create_form create = new create_form();
+
+            InitDiploma(create.cbDiploma);
+            InitDepartment(create.cb_department);
+
+            create.ShowDialog();
+
+            btnCapnhat_Click(this, null);
+
+        }
+
+        private void dgv_nhansu_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

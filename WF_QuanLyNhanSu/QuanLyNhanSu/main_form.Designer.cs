@@ -77,6 +77,7 @@
             this.dgv_nhansu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_nhansu.Size = new System.Drawing.Size(916, 322);
             this.dgv_nhansu.TabIndex = 0;
+            this.dgv_nhansu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_nhansu_CellContentClick);
             // 
             // manv
             // 
@@ -168,6 +169,7 @@
             this.btnThem.TabIndex = 2;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnXoa
             // 

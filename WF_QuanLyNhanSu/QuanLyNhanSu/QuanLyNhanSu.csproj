@@ -46,7 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="create_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="create_form.Designer.cs">
+      <DependentUpon>create_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="db_connection.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="main_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +73,12 @@
     <Compile Include="update_form.Designer.cs">
       <DependentUpon>update_form.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="create_form.resx">
+      <DependentUpon>create_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="main_form.resx">
       <DependentUpon>main_form.cs</DependentUpon>
     </EmbeddedResource>
