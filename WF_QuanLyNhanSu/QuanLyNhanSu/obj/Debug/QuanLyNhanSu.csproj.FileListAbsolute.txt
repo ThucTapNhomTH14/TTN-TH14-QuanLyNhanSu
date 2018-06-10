@@ -26,3 +26,16 @@ C:\Users\Trung\Desktop\ThucTapNhom\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyN
 C:\Users\Trung\Desktop\ThucTapNhom\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\Trung\Desktop\ThucTapNhom\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.GenerateResource.Cache
 C:\Users\Trung\Desktop\ThucTapNhom\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.update_form.resources
+F:\Git-stuff\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\bin\Debug\WindowsFormsApplication1.exe.config
+F:\Git-stuff\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\bin\Debug\WindowsFormsApplication1.exe
+F:\Git-stuff\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\bin\Debug\WindowsFormsApplication1.pdb
+F:\Git-stuff\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csprojResolveAssemblyReference.cache
+F:\Git-stuff\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.main_form.resources
+F:\Git-stuff\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+F:\Git-stuff\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.update_form.resources
+F:\Git-stuff\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.GenerateResource.cache
+F:\Git-stuff\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.CoreCompileInputs.cache
+F:\Git-stuff\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.exe
+F:\Git-stuff\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.pdb
+F:\Git-stuff\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.create_form.resources
+F:\Git-stuff\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.Form1.resources

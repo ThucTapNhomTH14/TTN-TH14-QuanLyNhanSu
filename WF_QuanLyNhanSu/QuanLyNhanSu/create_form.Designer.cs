@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class update_form
+    partial class create_form
     {
         /// <summary>
         /// Required designer variable.
@@ -19,7 +19,6 @@
             }
             base.Dispose(disposing);
         }
-
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -30,7 +29,6 @@
         {
             this.lb_name = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lb_id = new System.Windows.Forms.Label();
             this.lb_cmnd = new System.Windows.Forms.Label();
             this.lb_phone = new System.Windows.Forms.Label();
             this.lb_birth = new System.Windows.Forms.Label();
@@ -41,7 +39,6 @@
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtCMND = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.lb_id_string = new System.Windows.Forms.Label();
             this.cbDiploma = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -57,23 +54,6 @@
             this.lb_name.Size = new System.Drawing.Size(57, 13);
             this.lb_name.TabIndex = 0;
             this.lb_name.Text = "Họ và tên:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 248);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 1;
-            // 
-            // lb_id
-            // 
-            this.lb_id.AutoSize = true;
-            this.lb_id.Location = new System.Drawing.Point(12, 46);
-            this.lb_id.Name = "lb_id";
-            this.lb_id.Size = new System.Drawing.Size(75, 13);
-            this.lb_id.TabIndex = 2;
-            this.lb_id.Text = "Mã nhân viên:";
             // 
             // lb_cmnd
             // 
@@ -157,15 +137,6 @@
             this.txtName.Size = new System.Drawing.Size(250, 20);
             this.txtName.TabIndex = 11;
             // 
-            // lb_id_string
-            // 
-            this.lb_id_string.Location = new System.Drawing.Point(268, 46);
-            this.lb_id_string.Name = "lb_id_string";
-            this.lb_id_string.Size = new System.Drawing.Size(93, 13);
-            this.lb_id_string.TabIndex = 19;
-            this.lb_id_string.Text = "id_is_placed_here";
-            this.lb_id_string.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // cbDiploma
             // 
             this.cbDiploma.FormattingEnabled = true;
@@ -212,7 +183,7 @@
             this.cb_department.Size = new System.Drawing.Size(250, 21);
             this.cb_department.TabIndex = 28;
             // 
-            // update_form
+            // create_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -222,7 +193,6 @@
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.cbDiploma);
-            this.Controls.Add(this.lb_id_string);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtCMND);
             this.Controls.Add(this.txtSDT);
@@ -233,11 +203,10 @@
             this.Controls.Add(this.lb_birth);
             this.Controls.Add(this.lb_phone);
             this.Controls.Add(this.lb_cmnd);
-            this.Controls.Add(this.lb_id);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lb_name);
-            this.Name = "update_form";
-            this.Text = "Sửa thông tin cá nhân";
+            this.Name = "create_form";
+            this.Text = "Thêm thông tin cá nhân";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,7 +216,6 @@
 
         public System.Windows.Forms.Label lb_name;
         public System.Windows.Forms.Label label1;
-        public System.Windows.Forms.Label lb_id;
         public System.Windows.Forms.Label lb_cmnd;
         public System.Windows.Forms.Label lb_phone;
         public System.Windows.Forms.Label lb_birth;
@@ -258,7 +226,6 @@
         public System.Windows.Forms.TextBox txtSDT;
         public System.Windows.Forms.TextBox txtCMND;
         public System.Windows.Forms.TextBox txtName;
-        public System.Windows.Forms.Label lb_id_string;
         public System.Windows.Forms.ComboBox cbDiploma;
         public System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button btnCancel;
