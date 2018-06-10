@@ -150,5 +150,20 @@ namespace WindowsFormsApplication1
             bs.Filter = filter;
             dgv_nhansu.DataSource = bs;
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            btnThem_Click(this,null);
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            btnSua_Click(this, null);
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            btnXoa_Click(this, null);
+        }
     }
 }

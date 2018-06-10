@@ -32,7 +32,7 @@ namespace WindowsFormsApplication1
                 cmd.Parameters.AddWithValue("@cmnd", txtCMND.Text);
                 cmd.Parameters.AddWithValue("@sdt", txtSDT.Text);
                 cmd.Parameters.AddWithValue("@diachi", txtAddress.Text);
-                cmd.Parameters.AddWithValue("@ngaysinh", "1997-04-05");
+                cmd.Parameters.AddWithValue("@ngaysinh", dateTimePicker1.Value);
                 cmd.Parameters.AddWithValue("@tenphong", cb_department.Text);
                 cmd.Parameters.AddWithValue("@tentdhv", cbDiploma.Text);
 

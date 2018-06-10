@@ -28,7 +28,7 @@ namespace WindowsFormsApplication1
         private db_connection() { }
         //
 
-        public string ConnectionString = "Data Source=.;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
+        public string ConnectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
         public DataTable ExecuteQuery(string query,object[] parameter =null)
         {
             try

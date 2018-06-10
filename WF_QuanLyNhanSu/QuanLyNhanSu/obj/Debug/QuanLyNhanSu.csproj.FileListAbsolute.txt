@@ -39,3 +39,5 @@ F:\Git-stuff\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\Window
 F:\Git-stuff\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.pdb
 F:\Git-stuff\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.create_form.resources
 F:\Git-stuff\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Trung\Desktop\ThucTapNhom\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.create_form.resources
+C:\Users\Trung\Desktop\ThucTapNhom\TTN-TH14-QuanLyNhanSu\WF_QuanLyNhanSu\QuanLyNhanSu\obj\Debug\WindowsFormsApplication1.Form1.resources

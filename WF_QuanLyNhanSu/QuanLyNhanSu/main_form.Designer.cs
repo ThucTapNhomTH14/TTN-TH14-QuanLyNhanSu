@@ -59,7 +59,10 @@
             this.lastupdate_status = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusUpdateLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnCapnhat = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Search = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_nhansu)).BeginInit();
             this.menuBar.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -68,7 +71,7 @@
             // lb_name
             // 
             this.lb_name.AutoSize = true;
-            this.lb_name.Location = new System.Drawing.Point(11, 72);
+            this.lb_name.Location = new System.Drawing.Point(12, 97);
             this.lb_name.Name = "lb_name";
             this.lb_name.Size = new System.Drawing.Size(57, 13);
             this.lb_name.TabIndex = 0;
@@ -77,7 +80,7 @@
             // lb_cmnd
             // 
             this.lb_cmnd.AutoSize = true;
-            this.lb_cmnd.Location = new System.Drawing.Point(12, 124);
+            this.lb_cmnd.Location = new System.Drawing.Point(13, 149);
             this.lb_cmnd.Name = "lb_cmnd";
             this.lb_cmnd.Size = new System.Drawing.Size(42, 13);
             this.lb_cmnd.TabIndex = 3;
@@ -86,7 +89,7 @@
             // lb_phone
             // 
             this.lb_phone.AutoSize = true;
-            this.lb_phone.Location = new System.Drawing.Point(363, 72);
+            this.lb_phone.Location = new System.Drawing.Point(364, 97);
             this.lb_phone.Name = "lb_phone";
             this.lb_phone.Size = new System.Drawing.Size(32, 13);
             this.lb_phone.TabIndex = 4;
@@ -95,7 +98,7 @@
             // lb_address
             // 
             this.lb_address.AutoSize = true;
-            this.lb_address.Location = new System.Drawing.Point(11, 178);
+            this.lb_address.Location = new System.Drawing.Point(12, 203);
             this.lb_address.Name = "lb_address";
             this.lb_address.Size = new System.Drawing.Size(43, 13);
             this.lb_address.TabIndex = 6;
@@ -104,7 +107,7 @@
             // lb_department
             // 
             this.lb_department.AutoSize = true;
-            this.lb_department.Location = new System.Drawing.Point(362, 126);
+            this.lb_department.Location = new System.Drawing.Point(363, 151);
             this.lb_department.Name = "lb_department";
             this.lb_department.Size = new System.Drawing.Size(71, 13);
             this.lb_department.TabIndex = 7;
@@ -113,7 +116,7 @@
             // lb_diploma
             // 
             this.lb_diploma.AutoSize = true;
-            this.lb_diploma.Location = new System.Drawing.Point(362, 178);
+            this.lb_diploma.Location = new System.Drawing.Point(363, 203);
             this.lb_diploma.Name = "lb_diploma";
             this.lb_diploma.Size = new System.Drawing.Size(92, 13);
             this.lb_diploma.TabIndex = 8;
@@ -121,28 +124,28 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(111, 175);
+            this.txtAddress.Location = new System.Drawing.Point(112, 200);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(195, 20);
             this.txtAddress.TabIndex = 17;
             // 
             // txtSDT
             // 
-            this.txtSDT.Location = new System.Drawing.Point(462, 69);
+            this.txtSDT.Location = new System.Drawing.Point(463, 94);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(195, 20);
             this.txtSDT.TabIndex = 16;
             // 
             // txtCMND
             // 
-            this.txtCMND.Location = new System.Drawing.Point(111, 121);
+            this.txtCMND.Location = new System.Drawing.Point(112, 146);
             this.txtCMND.Name = "txtCMND";
             this.txtCMND.Size = new System.Drawing.Size(195, 20);
             this.txtCMND.TabIndex = 15;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(111, 69);
+            this.txtName.Location = new System.Drawing.Point(112, 94);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(195, 20);
             this.txtName.TabIndex = 11;
@@ -150,7 +153,7 @@
             // cbDiploma
             // 
             this.cbDiploma.FormattingEnabled = true;
-            this.cbDiploma.Location = new System.Drawing.Point(462, 175);
+            this.cbDiploma.Location = new System.Drawing.Point(463, 200);
             this.cbDiploma.Name = "cbDiploma";
             this.cbDiploma.Size = new System.Drawing.Size(195, 21);
             this.cbDiploma.TabIndex = 19;
@@ -158,7 +161,7 @@
             // cb_department
             // 
             this.cb_department.FormattingEnabled = true;
-            this.cb_department.Location = new System.Drawing.Point(462, 123);
+            this.cb_department.Location = new System.Drawing.Point(463, 148);
             this.cb_department.Name = "cb_department";
             this.cb_department.Size = new System.Drawing.Size(195, 21);
             this.cb_department.TabIndex = 28;
@@ -186,7 +189,7 @@
             this.dgv_nhansu.ReadOnly = true;
             this.dgv_nhansu.RowHeadersVisible = false;
             this.dgv_nhansu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_nhansu.Size = new System.Drawing.Size(967, 605);
+            this.dgv_nhansu.Size = new System.Drawing.Size(967, 215);
             this.dgv_nhansu.TabIndex = 0;
             // 
             // manv
@@ -305,7 +308,7 @@
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lastupdate_status,
             this.toolStripStatusUpdateLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 978);
+            this.statusStrip.Location = new System.Drawing.Point(0, 476);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(991, 22);
             this.statusStrip.TabIndex = 6;
@@ -332,22 +335,55 @@
             this.btnCapnhat.UseVisualStyleBackColor = true;
             this.btnCapnhat.Click += new System.EventHandler(this.btnCapnhat_Click);
             // 
-            // button1
+            // btn_Search
             // 
-            this.button1.Location = new System.Drawing.Point(728, 175);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_Search.Location = new System.Drawing.Point(729, 200);
+            this.btn_Search.Name = "btn_Search";
+            this.btn_Search.Size = new System.Drawing.Size(75, 23);
+            this.btn_Search.TabIndex = 29;
+            this.btn_Search.Text = "Tìm kiếm";
+            this.btn_Search.UseVisualStyleBackColor = true;
+            this.btn_Search.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(12, 49);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 30;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Location = new System.Drawing.Point(93, 49);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(75, 23);
+            this.btnEdit.TabIndex = 31;
+            this.btnEdit.Text = "Sửa";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(175, 48);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 32;
+            this.btnDelete.Text = "Xóa";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // main_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(991, 1000);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(991, 498);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btn_Search);
             this.Controls.Add(this.cb_department);
             this.Controls.Add(this.cbDiploma);
             this.Controls.Add(this.txtName);
@@ -413,7 +449,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn maphong;
         private System.Windows.Forms.DataGridViewTextBoxColumn matdhv;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusUpdateLabel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Search;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
 
