@@ -150,5 +150,6 @@ namespace WindowsFormsApplication1
             bs.Filter = filter;
             dgv_nhansu.DataSource = bs;
         }
+        
     }
 }
